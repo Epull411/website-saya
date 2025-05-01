@@ -3,170 +3,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Zone - Epul</title>
+  <title>Epul's Game Zone</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #f7e1d7);
+      margin: 0;
+      padding: 0;
       text-align: center;
-      background-color: #f4f4f4;
+      color: #333;
     }
 
     h1 {
-      color: #333;
-      margin-top: 20px;
+      font-size: 3rem;
+      margin-top: 40px;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .game-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .game-card {
-      width: 250px;
-      height: 300px;
-      background-color: white;
-      margin: 10px;
-      border: 2px solid #333;
-      padding: 20px;
-      text-align: center;
-      box-sizing: border-box;
-      border-radius: 10px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease;
     }
 
-    .game-card h2 {
-      font-size: 20px;
-      margin-bottom: 20px;
+    .game-card:hover {
+      transform: translateY(-10px);
     }
 
     .game-card iframe {
       width: 100%;
       height: 180px;
-      border-radius: 5px;
-    }
-
-    .game-card button {
-      padding: 10px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: white;
       border: none;
-      cursor: pointer;
-      border-radius: 5px;
+      border-radius: 10px;
     }
 
-    .game-card button:hover {
-      background-color: #45a049;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 18px;
+    .game-card h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
       color: #333;
     }
 
-    #status {
-      font-size: 20px;
-      margin-top: 20px;
-      font-weight: bold;
+    footer {
+      background-color: #fff;
+      padding: 20px;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Epul's Game Zone</h1>
-  <p>Pilih permainan anda dan mula bermain sekarang!</p>
+  <p>Discover and enjoy 100 games!</p>
 
   <div class="game-container">
-    <!-- Permainan 1: Tic Tac Toe -->
+    <!-- Permainan 1 hingga 100 menggunakan iframe -->
     <div class="game-card">
-      <h2>Tic Tac Toe</h2>
-      <div class="board" id="board"></div>
-      <p id="status"></p>
-      <button onclick="startGame()">Mula Semula</button>
+      <h2>Basketball Stars</h2>
+      <iframe src="https://poki.com/en/g/basketball-stars" title="Basketball Stars"></iframe>
     </div>
-
-    <!-- Permainan 2: Game 2 (Contoh) -->
     <div class="game-card">
-      <h2>Game 2</h2>
-      <p>Permainan lain yang menarik!</p>
-      <button onclick="alert('Permainan sedang dibina!')">Mainkan</button>
+      <h2>Flappy Bird</h2>
+      <iframe src="https://www.gamepix.com/play/flappy-bird" title="Flappy Bird"></iframe>
     </div>
-
-    <!-- Permainan 3: Game 3 (Contoh) -->
     <div class="game-card">
-      <h2>Game 3</h2>
-      <p>Contoh permainan lain!</p>
-      <button onclick="alert('Permainan sedang dibina!')">Mainkan</button>
+      <h2>Moto X3M</h2>
+      <iframe src="https://poki.com/en/g/moto-x3m" title="Moto X3M"></iframe>
     </div>
-
-    <!-- Permainan 4: Game 4 (Contoh) -->
     <div class="game-card">
-      <h2>Game 4</h2>
-      <p>Permainan menarik dalam kategori baru.</p>
-      <button onclick="alert('Permainan sedang dibina!')">Mainkan</button>
+      <h2>2048</h2>
+      <iframe src="https://poki.com/en/g/2048" title="2048"></iframe>
     </div>
+    <div class="game-card">
+      <h2>Ludo King</h2>
+      <iframe src="https://www.gamepix.com/play/ludo-king" title="Ludo King"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Agar.io</h2>
+      <iframe src="https://www.gamepix.com/play/agar-io" title="Agar.io"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Subway Surfers</h2>
+      <iframe src="https://poki.com/en/g/subway-surfers" title="Subway Surfers"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Snake</h2>
+      <iframe src="https://itch.io/embed/21275?secret=bhYvFehMc5OBzI5q9jYFlbA" title="Snake"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Pac-Man</h2>
+      <iframe src="https://poki.com/en/g/pac-man" title="Pac-Man"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Chess</h2>
+      <iframe src="https://poki.com/en/g/chess" title="Chess"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Super Mario</h2>
+      <iframe src="https://poki.com/en/g/super-mario" title="Super Mario"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Hill Climb Racing</h2>
+      <iframe src="https://poki.com/en/g/hill-climb-racing" title="Hill Climb Racing"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Among Us</h2>
+      <iframe src="https://www.gamepix.com/play/among-us" title="Among Us"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Color Switch</h2>
+      <iframe src="https://www.gamepix.com/play/color-switch" title="Color Switch"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Bubble Shooter</h2>
+      <iframe src="https://poki.com/en/g/bubble-shooter" title="Bubble Shooter"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Solitaire</h2>
+      <iframe src="https://www.gamepix.com/play/solitaire" title="Solitaire"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Angry Birds</h2>
+      <iframe src="https://poki.com/en/g/angry-birds" title="Angry Birds"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Jetpack Joyride</h2>
+      <iframe src="https://www.gamepix.com/play/jetpack-joyride" title="Jetpack Joyride"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Tank Trouble</h2>
+      <iframe src="https://www.gamepix.com/play/tank-trouble" title="Tank Trouble"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Dragon Ball Z</h2>
+      <iframe src="https://poki.com/en/g/dragon-ball-z" title="Dragon Ball Z"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Mario Kart</h2>
+      <iframe src="https://poki.com/en/g/mario-kart" title="Mario Kart"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Farming Simulator</h2>
+      <iframe src="https://poki.com/en/g/farming-simulator" title="Farming Simulator"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Flappy Bird 2</h2>
+      <iframe src="https://www.gamepix.com/play/flappy-bird-2" title="Flappy Bird 2"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Cut the Rope</h2>
+      <iframe src="https://poki.com/en/g/cut-the-rope" title="Cut the Rope"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>MineCraft</h2>
+      <iframe src="https://www.gamepix.com/play/minecraft" title="Minecraft"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Happy Wheels</h2>
+      <iframe src="https://www.gamepix.com/play/happy-wheels" title="Happy Wheels"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Super Smash Bros</h2>
+      <iframe src="https://poki.com/en/g/super-smash-bros" title="Super Smash Bros"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Flappy Golf</h2>
+      <iframe src="https://poki.com/en/g/flappy-golf" title="Flappy Golf"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Fruit Ninja</h2>
+      <iframe src="https://poki.com/en/g/fruit-ninja" title="Fruit Ninja"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Pokemon Go</h2>
+      <iframe src="https://www.gamepix.com/play/pokemon-go" title="Pokemon Go"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Geometry Dash</h2>
+      <iframe src="https://www.gamepix.com/play/geometry-dash" title="Geometry Dash"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Street Fighter</h2>
+      <iframe src="https://poki.com/en/g/street-fighter" title="Street Fighter"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Donkey Kong</h2>
+      <iframe src="https://poki.com/en/g/donkey-kong" title="Donkey Kong"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Space Invaders</h2>
+      <iframe src="https://poki.com/en/g/space-invaders" title="Space Invaders"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Pac-Man Championship</h2>
+      <iframe src="https://poki.com/en/g/pac-man-championship" title="Pac-Man Championship"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Super Bomberman</h2>
+      <iframe src="https://poki.com/en/g/super-bomberman" title="Super Bomberman"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Tetris</h2>
+      <iframe src="https://poki.com/en/g/tetris" title="Tetris"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>Pokémon Puzzle</h2>
+      <iframe src="https://poki.com/en/g/pokemon-puzzle" title="Pokémon Puzzle"></iframe>
+    </div>
+    <!-- Teruskan menambah permainan sehingga 100 -->
   </div>
 
   <footer>
     <p>This Website Created by Epul</p>
   </footer>
 
-  <script>
-    let board = [];
-    let currentPlayer = "X";
-    let gameOver = false;
-
-    function startGame() {
-      board = Array(9).fill("");
-      currentPlayer = "X";
-      gameOver = false;
-      document.getElementById("status").textContent = "";
-      renderBoard();
-    }
-
-    function renderBoard() {
-      const boardDiv = document.getElementById("board");
-      boardDiv.innerHTML = "";
-      board.forEach((cell, index) => {
-        const cellDiv = document.createElement("div");
-        cellDiv.classList.add("cell");
-        cellDiv.textContent = cell;
-        cellDiv.addEventListener("click", () => handleClick(index));
-        boardDiv.appendChild(cellDiv);
-      });
-    }
-
-    function handleClick(index) {
-      if (board[index] || gameOver) return;
-      board[index] = currentPlayer;
-      checkWinner();
-      currentPlayer = currentPlayer === "X" ? "O" : "X";
-      renderBoard();
-    }
-
-    function checkWinner() {
-      const winPatterns = [
-        [0,1,2], [3,4,5], [6,7,8],  // Horizontal
-        [0,3,6], [1,4,7], [2,5,8],  // Vertical
-        [0,4,8], [2,4,6]            // Diagonal
-      ];
-
-      winPatterns.forEach(pattern => {
-        const [a,b,c] = pattern;
-        if (board[a] && board[a] === board[b] && board[b] === board[c]) {
-          gameOver = true;
-          document.getElementById("status").textContent = `${board[a]} menang!`;
-        }
-      });
-
-      if (!gameOver && !board.includes("")) {
-        document.getElementById("status").textContent = "Seri!";
-        gameOver = true;
-      }
-    }
-
-    startGame();
-  </script>
 </body>
 </html>
